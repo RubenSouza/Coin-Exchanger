@@ -3,15 +3,15 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) {
-        double value = 0;
+        double value;
         Scanner input = new Scanner(System.in);
         Options options = new Options();
         options.options();
 
-        int escolha = input.nextInt();
+        int option = input.nextInt();
         input.nextLine();
 
-        switch (escolha) {
+        switch (option) {
             case 1 -> {
                 System.out.println("Digite o valor que deseja converter: ");
                 value = normalizeAndParseDouble(input.nextLine());
